@@ -12,12 +12,15 @@ namespace Currency_Watcher
         static void Main(string[] args)
         {
             var m = new Watcher();
+            string l,k;
             do
             {
-                Console.WriteLine("USDRUB = {0}", m.USDRUB());
-                Console.WriteLine("EURRUB = {0}", m.EURRUB());
+                 l = m.USDRUB();
+                 k = m.EURRUB();
                 Thread.Sleep(1000);
                 Console.Clear();
+                Console.WriteLine("USDRUB = {0}", l);
+                Console.WriteLine("EURRUB = {0}", k);
             }
             while (Console.KeyAvailable == false);
         }
