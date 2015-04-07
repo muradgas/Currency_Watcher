@@ -31,7 +31,7 @@ namespace Currency_Watcher
                 }
              catch (Exception)
                 {
-                    Console.WriteLine("Error");
+                    return "Error";
                 }  
              return "Error";
 
@@ -53,7 +53,7 @@ namespace Currency_Watcher
             }
             catch (Exception)
             {
-                Console.WriteLine("Error");
+                return "Error";
             }
             return "Error";
         }
