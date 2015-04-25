@@ -47,6 +47,8 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox HorizontalAlignment="Left" Height="72" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" Name="RateTextBox"/>
+            <Button Content="Refresh" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="436" Click="Button_Click"/>
 
         </Grid>
 
