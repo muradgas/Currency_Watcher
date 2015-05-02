@@ -7,7 +7,7 @@ using Currency_Watcher.Dto;
 
 namespace Currency_Watcher.Clients
 {
-    class RateClient
+    public sealed class RateClient: IRateClient
     {
         public void UsdRub(Action<string> callBack)
         {
@@ -25,7 +25,7 @@ namespace Currency_Watcher.Clients
         }
 
 
-        private static string FinishWebRequest(IAsyncResult asyncResult)
+        public string FinishWebRequest(IAsyncResult asyncResult)
         {
             var request = (HttpWebRequest)asyncResult.AsyncState;
             var response = (HttpWebResponse)request.EndGetResponse(asyncResult);
@@ -34,7 +34,7 @@ namespace Currency_Watcher.Clients
             return streamRead.ReadToEnd();
         }
 
-        private static QueryRoot ParseUsdRub(string json)
+        public QueryRoot ParseUsdRub(string json)
         {
             var serializer = new DataContractJsonSerializer(typeof(QueryRoot));
             return (QueryRoot)serializer.ReadObject(new MemoryStream(Encoding.UTF8.GetBytes(json)));

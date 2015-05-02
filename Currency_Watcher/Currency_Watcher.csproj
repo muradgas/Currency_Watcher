@@ -94,6 +94,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clients\RateClient.cs" />
+    <Compile Include="Clients\IRateClient.cs" />
     <Compile Include="Dto\Rate.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
