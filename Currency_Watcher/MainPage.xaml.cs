@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using Currency_Watcher.Clients;
 using Currency_Watcher.Parsers;
+using Currency_Watcher.Utils;
 
 namespace Currency_Watcher
 {

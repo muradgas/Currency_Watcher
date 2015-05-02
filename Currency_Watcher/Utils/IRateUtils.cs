@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Currency_Watcher.Clients
+namespace Currency_Watcher.Utils
 {
     public interface IRateUtils
     {

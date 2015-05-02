@@ -1,7 +1,8 @@
 ﻿using System;
+using Currency_Watcher.Clients;
 using Currency_Watcher.Parsers;
 
-namespace Currency_Watcher.Clients
+namespace Currency_Watcher.Utils
 {
     public sealed class RateUtils : IRateUtils
     {

@@ -2,6 +2,7 @@
 using Currency_Watcher.Clients;
 using Currency_Watcher.Dto;
 using Currency_Watcher.Parsers;
+using Currency_Watcher.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
